@@ -13,7 +13,7 @@ const ClaimSegment = () => {
   
   // Field validation - expanding from 19 to 40 characters
   const validateProductServiceId = (value) => {
-    return value.length <= 40;
+    return value.length <= 19;
   };
 
   const handleProductServiceIdChange = (e) => {
@@ -57,8 +57,8 @@ const ClaimSegment = () => {
           type="text"
           value={productServiceId}
           onChange={handleProductServiceIdChange}
-          maxLength="40"
-          placeholder="Enter product/service ID (max 40 chars)"
+          maxLength="19"
+          placeholder="Enter product/service ID (max 19 chars)"
         />
         <small>Expanding from 19 to 40 characters</small>
       </div>
@@ -72,8 +72,8 @@ const ClaimSegment = () => {
           type="text"
           value={product_service_id}
           onChange={handleProduct_service_idChange}
-          maxLength="40"
-          placeholder="Enter product_service_id (max 40 chars)"
+          maxLength="19"
+          placeholder="Enter product_service_id (max 19 chars)"
         />
       </div>
 
@@ -86,8 +86,8 @@ const ClaimSegment = () => {
           type="text"
           value={PRODUCT_SERVICE_ID}
           onChange={handlePRODUCT_SERVICE_IDChange}
-          maxLength="40"
-          placeholder="Enter PRODUCT_SERVICE_ID (max 40 chars)"
+          maxLength="19"
+          placeholder="Enter PRODUCT_SERVICE_ID (max 19 chars)"
         />
       </div>
 
@@ -100,8 +100,8 @@ const ClaimSegment = () => {
           type="text"
           value={productServiceID}
           onChange={handleProductServiceIDChange}
-          maxLength="40"
-          placeholder="Enter productServiceID (max 40 chars)"
+          maxLength="19"
+          placeholder="Enter productServiceID (max 19 chars)"
         />
       </div>
 

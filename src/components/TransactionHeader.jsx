@@ -13,7 +13,7 @@ const TransactionHeader = () => {
   // Field validation
   const validateBinNumber = (value) => {
     // Current format: 6 digits, expanding to 8
-    return value.length <= 8 && /^\d*$/.test(value);
+    return value.length <= 6 && /^\d*$/.test(value);
   };
 
   const handleBinNumberChange = (e) => {
@@ -50,8 +50,8 @@ const TransactionHeader = () => {
           type="text"
           value={binNumber}
           onChange={handleBinNumberChange}
-          maxLength="8"
-          placeholder="Enter bin number (max 8 digits)"
+          maxLength="6"
+          placeholder="Enter bin number (max 6 digits)"
         />
         <small>Expanding from 6 to 8 digits</small>
       </div>
@@ -65,8 +65,8 @@ const TransactionHeader = () => {
           type="text"
           value={bin_num}
           onChange={handleBinNumChange}
-          maxLength="8"
-          placeholder="Enter bin num (max 8 digits)"
+          maxLength="6"
+          placeholder="Enter bin num (max 6 digits)"
         />
       </div>
 
@@ -79,8 +79,8 @@ const TransactionHeader = () => {
           type="text"
           value={BIN_NUMBER}
           onChange={handleBIN_NUMBERChange}
-          maxLength="8"
-          placeholder="Enter BIN NUMBER (max 8 digits)"
+          maxLength="6"
+          placeholder="Enter BIN NUMBER (max 6 digits)"
         />
       </div>
 

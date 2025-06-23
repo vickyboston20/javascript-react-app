@@ -13,7 +13,7 @@ const PharmacyProvider = () => {
   
   // Field validation - expanding from 15 to 35 characters
   const validateProviderId = (value) => {
-    return value.length <= 35;
+    return value.length <= 15;
   };
 
   const handleProviderIdChange = (e) => {
@@ -57,8 +57,8 @@ const PharmacyProvider = () => {
           type="text"
           value={providerId}
           onChange={handleProviderIdChange}
-          maxLength="35"
-          placeholder="Enter provider ID (max 35 chars)"
+          maxLength="15"
+          placeholder="Enter provider ID (max 15 chars)"
         />
         <small>Expanding from 15 to 35 characters</small>
       </div>
@@ -72,8 +72,8 @@ const PharmacyProvider = () => {
           type="text"
           value={provider_id}
           onChange={handleProvider_idChange}
-          maxLength="35"
-          placeholder="Enter provider_id (max 35 chars)"
+          maxLength="15"
+          placeholder="Enter provider_id (max 15 chars)"
         />
       </div>
 
@@ -86,8 +86,8 @@ const PharmacyProvider = () => {
           type="text"
           value={PROVIDER_ID}
           onChange={handlePROVIDER_IDChange}
-          maxLength="35"
-          placeholder="Enter PROVIDER_ID (max 35 chars)"
+          maxLength="15"
+          placeholder="Enter PROVIDER_ID (max 15 chars)"
         />
       </div>
 
@@ -100,8 +100,8 @@ const PharmacyProvider = () => {
           type="text"
           value={providerID}
           onChange={handleProviderIDChange}
-          maxLength="35"
-          placeholder="Enter providerID (max 35 chars)"
+          maxLength="15"
+          placeholder="Enter providerID (max 15 chars)"
         />
       </div>
 
